@@ -1,0 +1,4 @@
+*.pdf
+*.csv
+.Rhistory
+Test.R
