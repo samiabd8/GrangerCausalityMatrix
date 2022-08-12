@@ -4,6 +4,11 @@ library(MASS)
 library(lmtest)
 library(NlinTS)
 library(neuralnet)
+
+t0 <- Sys.time()
+
+setwd('/home/dmnsh/Projects/GrangerCausalityMatrixPackage')
+
 par(mfrow=c(1,1))
 data = as.data.frame(read.csv("./datayobit1h.csv", header = TRUE,sep = ","))
 
@@ -48,6 +53,7 @@ caus_matrix <- function(k){
   pvals = matrix(NA,ncol=1,nrow=12)
   pvals = output[I,]
 }
+print(Sys.time() - t0)
 
 pvals_btc <- caus_matrix(k=1)
 colnames(pvals_btc) <- colnames(log_returns[,-1])
@@ -71,3 +77,5 @@ plot(rowMeans(nlg_matrix))
 #optlag in nl case is 3h
 rm(i,J,k,K,L)
 rm(X,y)
+
+
