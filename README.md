@@ -7,12 +7,6 @@ a dataset and returns it as a labeled matrix, a *Granger Causality Matrix*
 (GCM), that reads like a correlation table. It also draws the matrix as a
 p-value heatmap.
 
-## Why
-
-`statsmodels` gives you a bivariate Granger test. Turning that into an
-all-pairs matrix, handling stationarity, picking lags, and correcting for the
-N²−N simultaneous tests is left to copy-pasted notebook snippets. `grangercm`
-packages the whole workflow.
 
 ## Install
 
