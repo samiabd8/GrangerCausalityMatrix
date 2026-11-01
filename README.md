@@ -3,8 +3,8 @@
 **Granger Causality Matrices and heatmaps for multivariate time series.**
 
 `grangercm` computes pairwise Granger causality across every pair of series in
-a dataset and returns it as a labeled matrix — a *Granger Causality Matrix*
-(GCM) — that reads like a correlation table. It also draws the matrix as a
+a dataset and returns it as a labeled matrix, a *Granger Causality Matrix*
+(GCM), that reads like a correlation table. It also draws the matrix as a
 p-value heatmap.
 
 ## Why
