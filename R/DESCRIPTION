@@ -1,0 +1,31 @@
+Package: gcmatrix
+Type: Package
+Title: Granger Causality Matrices for Multivariate Time Series
+Version: 0.1.0
+Authors@R: person("Your", "Name", email = "you@example.com",
+                   role = c("aut", "cre"))
+Description: Computes pairwise Granger causality across every pair of series
+    in a multivariate time series dataset and returns the result as a labeled
+    matrix - a Granger Causality Matrix - that reads like a correlation table.
+    Provides stationarity testing and differencing helpers, multiple-testing
+    correction across the simultaneous tests, and a p-value heatmap plotting
+    method.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports:
+    lmtest,
+    stats,
+    graphics,
+    grDevices
+Suggests:
+    rpart,
+    testthat (>= 3.0.0),
+    tseries,
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+URL: https://github.com/yourname/gcmatrix
+BugReports: https://github.com/yourname/gcmatrix/issues
